@@ -1,0 +1,29 @@
+# -1 for many values -> defaults:
+#	cIMax	1
+#	delcI	0.01
+#	maxNumIteration	100
+#	relTol			1e-3
+
+#	mode:	
+#		3 	3D
+#		21 	plane strain
+#		22 	plane stress
+#	input type
+#		1	E, nu read
+#		2	K, mu read
+
+START
+cIMax	0.15
+delcI 	-1.0
+maxNumIteration -1
+relTol -1.0
+compute_sigma_versionToo	0
+
+mode 3
+input_type 1
+matrix_pars 
+1.0 0.25
+num_inc
+1
+xi		para1		para2
+1.0		1000.0		0.25
